@@ -1,0 +1,55 @@
+%  greek.tex: generate a labeled table of the Greek alphabet
+%  Copyright (C) 2013 Steve Sprang
+%
+%  This program is free software: you can redistribute it and/or modify
+%  it under the terms of the GNU General Public License as published by
+%  the Free Software Foundation, either version 3 of the License, or
+%  (at your option) any later version.
+%
+%  This program is distributed in the hope that it will be useful,
+%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%  GNU General Public License for more details.
+%
+%  You should have received a copy of the GNU General Public License
+%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+\font\title=cmssbx10 at 12pt
+
+\def\Alpha{\rm A}
+\def\Beta{\rm B}
+\def\Epsilon{\rm E}
+\def\Zeta{\rm Z}
+\def\Eta{\rm H}
+\def\Iota{\rm I}
+\def\Kappa{\rm K}
+\def\Mu{\rm M}
+\def\Nu{\rm N}
+\def\Omicron{\rm O}
+\def\Rho{\rm P}
+\def\Tau{\rm T}
+\def\Chi{\rm X}
+
+\centerline{\title Greek Alphabet}
+
+\vskip 1em
+\openup 0.5em
+
+\def\inset{\hskip1.8in}
+\tabskip = 1em plus 2em minus 0.5em
+
+\halign to \hsize{\inset \hfil $#$ \hfil & # \qquad&\qquad \hfil $#$ \hfil & # \inset \cr
+{\Alpha\ \alpha} & alpha & {\Nu\ \nu} & nu \cr
+{\Beta\ \beta} & beta & {\Xi\ \xi} & xi \cr
+{\Gamma\ \gamma} & gamma & {\Omicron\ o} & omicron \cr
+{\Delta\ \delta} & delta & {\Pi\ \pi} & pi \cr
+{\Epsilon\ \epsilon} & epsilon & {\Rho\ \rho} & rho \cr
+{\Zeta\ \zeta} & zeta & {\Sigma\ \sigma} & sigma \cr
+{\Eta\ \eta} & eta & {\Tau\ \tau} & tau \cr
+{\Theta\ \theta} & theta & {\Upsilon\ \upsilon} & upsilon \cr
+{\Iota\ \iota} & iota & {\Phi\ \phi} & phi \cr
+{\Kappa\ \kappa} & kappa & {\Chi\ \chi} & chi \cr
+{\Lambda\ \lambda} & lambda & {\Psi\ \psi} & psi \cr
+{\Mu\ \mu} & mu & {\Omega\ \omega} & omega \cr}
+
+\end
